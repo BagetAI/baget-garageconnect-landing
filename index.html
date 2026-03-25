@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GarageConnect - Connectez votre garage avec vos clients</title>
+  <meta name="description" content="GarageConnect : solution digitale pour garagistes en France. Gérez vos rendez-vous, communiquez facilement, fidélisez vos clients." />
+  <meta name="keywords" content="GarageConnect, garagistes, gestion rendez-vous, garages indépendants, maintenance automobile, France" />
+  <meta name="author" content="GarageConnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgb(37 99 235 / 0.4);
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 15px;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .hero h2 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #111827;
+    }
+    .hero p {
+      font-size: 1.125rem;
+      color: #4b5563;
+      margin-bottom: 2rem;
+    }
+    .btn-primary {
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.125rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background-color: #1d4ed8;
+      outline: none;
+    }
+    section.features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+    .feature {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgb(0 0 0 / 0.1);
+      padding: 25px 20px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgb(37 99 235 / 0.3);
+    }
+    .feature h3 {
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: #1e40af;
+    }
+    .feature p {
+      color: #4b5563;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.875rem;
+      color: #9ca3af;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 60px;
+    }
+    .contact {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .feature {
+        width: 100%;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .btn-primary {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GarageConnect</h1>
+  </header>
+  <main>
+    <section class="hero" role="banner">
+      <h2>La solution digitale pour votre garage en France</h2>
+      <p>Améliorez la gestion de vos rendez-vous, communiquez facilement avec vos clients et fidélisez-les grâce à GarageConnect.</p>
+      <a href="#signup" class="btn-primary" aria-label="S'inscrire maintenant">S'inscrire maintenant</a>
+    </section>
+    <section class="features" aria-label="Fonctionnalités principales">
+      <article class="feature">
+        <h3>Gestion simple des rendez-vous</h3>
+        <p>Planifiez, modifiez et optimisez vos rendez-vous facilement via une interface intuitive et accessible.</p>
+      </article>
+      <article class="feature">
+        <h3>Communication transparente</h3>
+        <p>Envoyez des devis clairs et recevez des mises à jour en temps réel sur les réparations de vos clients.</p>
+      </article>
+      <article class="feature">
+        <h3>Fidélisation client personnalisée</h3>
+        <p>Offrez à vos clients des services adaptés à leurs besoins pour renforcer leur confiance et leur fidélité.</p>
+      </article>
+      <article class="feature">
+        <h3>Support et formation</h3>
+        <p>Bénéficiez d'un accompagnement dédié et de ressources pour maximiser l'utilisation de GarageConnect.</p>
+      </article>
+    </section>
+    <section id="signup" aria-label="Formulaire d'inscription" style="max-width: 480px; margin: 0 auto 60px;">
+      <h2 style="text-align:center; margin-bottom: 1rem; color: #1e40af;">Rejoignez GarageConnect dès aujourd'hui</h2>
+      <form action="mailto:raphael@baget.ai" method="post" enctype="text/plain" style="display:flex; flex-direction: column; gap: 12px;">
+        <label for="name">Nom du garage</label>
+        <input type="text" id="name" name="Nom du garage" placeholder="Ex: Garage Dupont" required style="padding: 10px; border-radius: 6px; border: 1px solid #d1d5db; font-size: 1rem;" />
+
+        <label for="email">Adresse email</label>
+        <input type="email" id="email" name="Email" placeholder="votre.email@example.com" required style="padding: 10px; border-radius: 6px; border: 1px solid #d1d5db; font-size: 1rem;" />
+
+        <label for="phone">Téléphone (optionnel)</label>
+        <input type="tel" id="phone" name="Téléphone" placeholder="06 12 34 56 78" style="padding: 10px; border-radius: 6px; border: 1px solid #d1d5db; font-size: 1rem;" />
+
+        <button type="submit" class="btn-primary" style="width: 100%; font-weight: 600;">Demander une démo gratuite</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 GarageConnect. Tous droits réservés.</p>
+    <a href="mailto:raphael@baget.ai" class="contact">Contactez-nous</a>
+  </footer>
+</body>
+</html>
